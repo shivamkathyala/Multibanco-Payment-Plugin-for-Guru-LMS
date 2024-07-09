@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" type="plugin" group="gurupayment" method="upgrade">
+    <name>Multibanco</name>
+    <author>Shivam Thakur</author>
+    <authorEmail>shivamkathyala@gmail.com</authorEmail>
+    <authorUrl>https://github.com/shivamkathyala/Multibanco-Payment-Plugin-for-Guru-LMS</authorUrl>
+    <creationDate>July 03, 2024</creationDate>
+    <copyright>Open Source</copyright>
+    <version>1.0.0</version>
+    <description>PLG_GURU_CUSTOM_PAYMENT_DESCRIPTION</description>
+
+    <files>
+        <filename plugin="multibanco">multibanco.php</filename>
+        <folder>language</folder>    
+        <folder>assets</folder>
+        <folder>fields</folder>
+        <filename>multibanco-logo.png</filename>
+    </files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_gurupayment_multibanco.ini</language>
+        <language tag="en-GB">language/en-GB/plg_gurupayment_multibanco.sys.ini</language>
+        <language tag="pt-PT">language/pt-PT/plg_gurupayment_multibanco.ini</language>
+        <language tag="pt-PT">language/pt-PT/plg_gurupayment_multibanco.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params" addfieldpath="/plugins/gurupayment/multibanco/fields">
+            <fieldset name="basic">
+                <field name="multibanco_label" type="text" default="" label="PLG_NAME" description="" />
+                <field name="multibanco_key" type="text" label="MB Key" description="Enter MB key." />
+                <field name="phishing_key" type="text" label="Phishing Key" description="Enter phishing key." />
+                <field name="multibancocallback" type="multibancocallback" label="Callback Setup" description="" />
+		<field name="multibanco_sandbox" class="btn-group" type="radio" default="0" label="PLG_MULTIBANCO_SANDBOX" description="PLG_MULTIBANCO_SANDBOX_DESC">
+			<option value="1">PLG_MULTIBANCO_YES</option>
+			<option value="0">PLG_MULTIBANCO_NO</option>
+		</field>
+		<field 
+            name="multibanco_expiry_date" 
+            type="list" 
+            default="" 
+            label="PLG_MULTIBANCO_EXPIRATION_DATE" 
+            description="PLG_MULTIBANCO_EXPIRATION_DATE_DESC">
+            <option value="">PLG_MULTIBANCO_NO_EXPIRATION_DATE</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="45">45</option>
+            <option value="60">60</option>
+            <option value="90">90</option>
+            <option value="120">120</option>
+            <option value="180">180</option>
+            <option value="365">365</option>
+            <option value="730">730</option>
+        </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

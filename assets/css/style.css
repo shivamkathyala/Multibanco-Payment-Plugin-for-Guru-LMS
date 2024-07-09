@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@media screen and (max-width: 600px) {
+    h4#top_sec_heading_multibanco_design {
+        font-size: 14px !important;
+    }
+    div#multibanco-refrence {
+        border: none !important;
+        padding: 0 !important;
+        margin-bottom: 30px !important;
+    }
+    .logo__multibanco img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 60% !important;
+    }
+    div#multibanco-refrence-data-fields span {
+        font-size: 10px !important;
+    }
+    div#multibanco-refrence-data-fields p {
+        font-size: 12px !important;
+    }
+    .down_sec_logo_text_multibanco {
+        padding: 10px !important;
+        align-items: center;
+        gap: 10px !important;
+    }
+}
